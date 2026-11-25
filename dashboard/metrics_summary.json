@@ -1,0 +1,81 @@
+{
+  "best_model": "Gradient Boosting",
+  "models": {
+    "Gradient Boosting": {
+      "cv_roc_auc_mean": 0.9184,
+      "cv_roc_auc_std": 0.0082,
+      "test_accuracy": 0.864,
+      "test_precision": 0.821,
+      "test_recall": 0.785,
+      "test_f1": 0.802,
+      "test_roc_auc": 0.918,
+      "roc_curve": [
+        { "fpr": 0.0, "tpr": 0.0 },
+        { "fpr": 0.02, "tpr": 0.28 },
+        { "fpr": 0.05, "tpr": 0.52 },
+        { "fpr": 0.1, "tpr": 0.74 },
+        { "fpr": 0.15, "tpr": 0.83 },
+        { "fpr": 0.2, "tpr": 0.88 },
+        { "fpr": 0.35, "tpr": 0.94 },
+        { "fpr": 0.6, "tpr": 0.98 },
+        { "fpr": 1.0, "tpr": 1.0 }
+      ]
+    },
+    "Random Forest": {
+      "cv_roc_auc_mean": 0.9062,
+      "cv_roc_auc_std": 0.0094,
+      "test_accuracy": 0.852,
+      "test_precision": 0.81,
+      "test_recall": 0.76,
+      "test_f1": 0.784,
+      "test_roc_auc": 0.906,
+      "roc_curve": [
+        { "fpr": 0.0, "tpr": 0.0 },
+        { "fpr": 0.03, "tpr": 0.24 },
+        { "fpr": 0.08, "tpr": 0.48 },
+        { "fpr": 0.15, "tpr": 0.7 },
+        { "fpr": 0.25, "tpr": 0.84 },
+        { "fpr": 0.45, "tpr": 0.92 },
+        { "fpr": 1.0, "tpr": 1.0 }
+      ]
+    },
+    "Logistic Regression": {
+      "cv_roc_auc_mean": 0.8541,
+      "cv_roc_auc_std": 0.0112,
+      "test_accuracy": 0.812,
+      "test_precision": 0.745,
+      "test_recall": 0.72,
+      "test_f1": 0.732,
+      "test_roc_auc": 0.854,
+      "roc_curve": [
+        { "fpr": 0.0, "tpr": 0.0 },
+        { "fpr": 0.08, "tpr": 0.2 },
+        { "fpr": 0.18, "tpr": 0.45 },
+        { "fpr": 0.3, "tpr": 0.68 },
+        { "fpr": 0.5, "tpr": 0.82 },
+        { "fpr": 1.0, "tpr": 1.0 }
+      ]
+    }
+  },
+  "feature_importances": [
+    { "feature": "contract_type_Two-Year", "importance": 0.28 },
+    { "feature": "tenure_months", "importance": 0.24 },
+    { "feature": "monthly_charges", "importance": 0.16 },
+    { "feature": "satisfaction_score", "importance": 0.14 },
+    { "feature": "support_tickets", "importance": 0.09 },
+    { "feature": "ticket_frequency", "importance": 0.05 },
+    { "feature": "charges_per_tenure", "importance": 0.04 }
+  ],
+  "sample_points": [
+    { "tenure_months": 5, "monthly_charges": 89.5, "churn": 1, "satisfaction_score": 2 },
+    { "tenure_months": 42, "monthly_charges": 45.0, "churn": 0, "satisfaction_score": 5 },
+    { "tenure_months": 12, "monthly_charges": 95.0, "churn": 1, "satisfaction_score": 1 },
+    { "tenure_months": 60, "monthly_charges": 65.0, "churn": 0, "satisfaction_score": 4 },
+    { "tenure_months": 8, "monthly_charges": 78.0, "churn": 1, "satisfaction_score": 2 },
+    { "tenure_months": 36, "monthly_charges": 35.0, "churn": 0, "satisfaction_score": 4 },
+    { "tenure_months": 18, "monthly_charges": 88.0, "churn": 1, "satisfaction_score": 3 },
+    { "tenure_months": 52, "monthly_charges": 55.0, "churn": 0, "satisfaction_score": 5 },
+    { "tenure_months": 2, "monthly_charges": 105.0, "churn": 1, "satisfaction_score": 1 },
+    { "tenure_months": 65, "monthly_charges": 42.0, "churn": 0, "satisfaction_score": 5 }
+  ]
+}
